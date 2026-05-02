@@ -1,0 +1,127 @@
+<!DOCTYPE html> <!-- Informa o tipo de documento -->
+<html lang="pt-br"> <!-- Define a linguagem do documento -->
+<head> <!-- Cabeçalho do documento 
+    // elemento <head> é usado para definir o cabeçalho do documento, onde colocamos informações sobre o documento, 
+    como o título, a codificação de caracteres, etc. --> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Portifólio</title> <!-- Titulo da Página: como vai aparecer na aba do navegador -->
+</head> <!-- Fim do cabeçalho -->
+
+<!-- head é diferente de header, head se refere ao cabeçalho do documento e header se refere ao cabeçalho da página -->
+<!-- Conteúdo da página -->
+
+<body> <!-- Corpo do documento 
+    // O corpo do documento é onde colocamos o conteúdo que será exibido na página, como texto, imagens, links, etc. --> 
+    <header> <!-- Cabeçalho da página: o elemento <header> é usado para definir o cabeçalho da página, 
+        onde colocamos o título da página, a navegação, etc. -->
+        <h1>Sofia Silva</h1> <!-- Define o título principal da página e o tamanho do texto -->
+
+        <nav> <!-- Navegação 
+            // O elemento <nav> é usado para definir uma seção de navegação na página,
+            onde colocamos os links para as diferentes seções do site. -->  
+            <ul> <!-- Menu 
+                // O elemento <ul> é usado para criar uma lista não ordenada, 
+                onde cada item da lista é definido pelo elemento <li>. --> 
+                <li><a href="#sobre">Sobre mim</a></li> 
+                 <!-- O elemento <a> é usado para criar um link, onde o atributo href define o destino do link.
+                 // O símbolo # é usado para indicar que o link leva a uma seção específica da página, 
+                 onde o id da seção é definido pelo valor após o símbolo #. --> 
+                <li><a href="#projetos">Projetos</a></li> 
+                <!-- O elemento <a> é usado para criar um link, onde o atributo href define o destino do link.
+                // O símbolo # é usado para indicar que o link não tem um destino específico, ou seja,
+                ele não leva a nenhuma página.-->
+                <li><a href="#contato">Contato</a></li> 
+                <li><a href="https://google.com.br/" target="_blank">Google</a></li> <!-- link externo -->
+                <!-- // o elemento target="_blank" faz com que o link seja aberto em uma nova aba do navegador, 
+                em vez de abrir na mesma aba. -->
+
+            </ul> <!-- Fim do menu -->
+        </nav> <!-- Fim da navegação -->
+    </header> <!-- Fim do cabeçalho da página -->
+
+    <section id="sobre"> <!-- Seção de conteúdo 
+        // O elemento <section> é usado para definir uma seção de conteúdo na página, 
+        onde colocamos o conteúdo relacionado a um tema específico. --> 
+        <h2>Sobre mim</h2> <!-- Define o título secundário da página e o tamanho do texto -->
+       
+        <img src=""
+        alt="Foto de perfil de Sofia Silva"
+        title="Foto de perfil de Sofia Silva"> <!-- Adiciona uma imagem à página
+        // O elemento <img> é usado para inserir uma imagem na página, onde o atributo src define o caminho da imagem 
+        // o atributo alt define um texto alternativo para a imagem, caso ela não possa ser exibida.
+        // o elemento title define um texto de título para a imagem, que é exibido quando o usuário passa o mouse sobre ela. -->
+    
+        <article> <!-- Artigo de conteúdo 
+            // O elemento <article> é usado para definir um artigo de conteúdo na página, 
+                onde colocamos informações relacionadas a um tema específico. -->
+            <p> <!-- Parágrafo de texto -->
+                Olá! Meu nome é Sofia Silva e sou uma desenvolvedora web apaixonada por criar experiências digitais incríveis. 
+                <br>
+                Tenho experiência em HTML, CSS, JavaScript e estou sempre buscando aprender novas tecnologias para aprimorar minhas habilidades.
+            </p> <!-- Fim do parágrafo de texto -->
+        </article>
+       
+        <h3>Minha jornada profissional</h3> <!-- Define o título terciário da página e o tamanho do texto -->
+        <p>
+            Minha jornada profissional começou há alguns anos, quando comecei a estudar programação. 
+            <br>
+            Desde então, tenho trabalhado em diversos projetos, sempre buscando aprimorar minhas habilidades e aprender novas tecnologias.
+        </p>
+               
+    </section> <!-- Fim da seção de conteúdo -->
+
+<footer>
+    <!-- Rodapé da página: o elemento <footer> é usado para definir o rodapé da página,
+    onde colocamos informações de contato, direitos autorais, etc. -->
+
+
+<section id="contato"> 
+    <!-- o elemento id define o identificador único da seção, utilizado para criar âncoras na página -->
+    <h2>Contatos</h2>
+
+<p>
+Tem interesse em fechar um projeto comigo? Entre em contato.
+</p>
+
+   <address>
+<!-- O elemento <address> é usado para definir informações de contato, como endereço, telefone, email, etc. -->
+       <p>
+        Endereço: Rua das Flores, 123, São Paulo, SP
+       </p>
+
+       <p>
+        Email: <a href="mailto:sofia.silva@example.com">sofia.silva@example.com</a>
+        <!-- O elemento <a> é usado para criar um link, onde o atributo href define o destino do link. 
+        No caso do email, usamos o protocolo mailto: para indicar que o link é para enviar um email. -->
+       </p>
+
+       <p>
+        Telefone: <a href="tel:(11) 1234-5678">(11) 1234-5678</a>
+        <!-- O elemento <a> é usado para criar um link, onde o atributo href define o destino do link. 
+        No caso do telefone, usamos o protocolo tel: para indicar que o link é para fazer uma ligação. -->
+       </p>
+
+   </address>
+
+<p>
+        &copy; 2023 Sofia Silva. Todos os direitos reservados. 
+        <!-- O símbolo &copy; é usado para representar o símbolo de direitos autorais, 
+         indicando que o conteúdo da página é protegido por direitos autorais e não pode ser reproduzido sem permissão. -->
+    </p> 
+
+</section>
+
+</footer> <!-- Fim do rodapé da página -->
+
+
+</body> <!-- Fim do corpo do documento -->
+</html> <!-- Fim do documento -->
+
+
+
+<!--
+links úteis:
+https://developer.mozilla.org/pt-BR/docs/Web/HTML
+https://www.w3schools.com/html/default.asp
+-->
