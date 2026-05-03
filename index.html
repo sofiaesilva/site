@@ -24,15 +24,15 @@
                 // O elemento <ul> é usado para criar uma lista não ordenada, 
                 onde cada item da lista é definido pelo elemento <li>. --> 
                 <li><a href="#sobre">Sobre mim</a></li> 
-                 <!-- O elemento <a> é usado para criar um link, onde o atributo href define o destino do link.
-                 // O símbolo # é usado para indicar que o link leva a uma seção específica da página, 
-                 onde o id da seção é definido pelo valor após o símbolo #. --> 
-                <li><a href="#projetos">Projetos</a></li> 
                 <!-- O elemento <a> é usado para criar um link, onde o atributo href define o destino do link.
-                // O símbolo # é usado para indicar que o link não tem um destino específico, ou seja,
-                ele não leva a nenhuma página.-->
+                // O símbolo # é usado para indicar que o link leva a uma seção específica da página, 
+                onde o id da seção é definido pelo valor após o símbolo #. 
+                Já quando o símbolo # é usado sozinho, indica que o link não tem um destino específico, 
+                ou seja, ele não leva a nenhuma página--> 
+                <li><a href="#projetos">Projetos</a></li> 
+                <li><a href="#habilidades">Habilidades</a></li> 
                 <li><a href="#contato">Contato</a></li> 
-                <li><a href="https://google.com.br/" target="_blank">Google</a></li> <!-- link externo -->
+                <li><a href="https://www.linkedin.com/in/sofia-silva-525022359/" target="_blank">Linkedin</a></li> <!-- link externo -->
                 <!-- // o elemento target="_blank" faz com que o link seja aberto em uma nova aba do navegador, 
                 em vez de abrir na mesma aba. -->
 
@@ -59,7 +59,7 @@
                 Olá! Meu nome é Sofia Silva e sou uma desenvolvedora web apaixonada por criar experiências digitais incríveis. 
                 <br>
                 Tenho experiência em HTML, CSS, JavaScript e estou sempre buscando aprender novas tecnologias para aprimorar minhas habilidades.
-                
+                <br>
                 Adicionar texto adicional aqui para preencher o parágrafo e mostrar como o texto é exibido na página.
             
             </p> <!-- Fim do parágrafo de texto -->
@@ -74,6 +74,64 @@
                
     </section> <!-- Fim da seção de conteúdo -->
 
+    <section id="projetos">
+        <h2>Projetos</h2> 
+        <article>
+            <h3>Projeto 1: Site de Portfólio</h3>
+            
+            <p>
+                Este é o meu primeiro site, desenvolvido para fins de aprendizado.
+            </p>
+        </article>        
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades e tecnologias</h2>
+
+        <table> <!-- Cria uma tabela -->
+            <thead> <!-- Cabeçalho da tabela: primeira linha -->
+                <tr> <!-- Cria uma linha na tabela -->
+                    <th>Tecnologia</th> <!-- Célula do cabeçalho que define o nome da coluna -->
+                    <th>Nível de Proficiência</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+
+            <tbody> <!-- Corpo da tabela: linhas de dados -->
+                <tr>
+                    <td>HTML</td> <!-- Célula de dados que define o conteúdo da célula -->
+                    <td>Iniciante</td>
+                    <td>Conhecimento básico em HTML5, incluindo semântica e melhores práticas.</td>
+                </tr>
+
+                <tr>
+                    <td>JavaScript</td> 
+                    <td>Iniciante</td>
+                    <td>Conhecimento básico em JavaScript, incluindo sintaxe, funções e manipulação do DOM.</td>
+                </tr>
+
+                <tr>
+                    <td>Python</td> 
+                    <td>Iniciante</td>
+                    <td>Conhecimento básico em Python, incluindo sintaxe e programação orientada a objetos.</td>
+                </tr>
+
+                <tr>
+                    <td>SQL</td> 
+                    <td>Iniciante</td>
+                    <td>Conhecimento básico em SQL, incluindo consultas e manipulação de dados.</td>
+                </tr>
+
+            </tbody>
+
+
+        </table>
+    
+
+    </section>
+
+
+
 <footer>
     <!-- Rodapé da página: o elemento <footer> é usado para definir o rodapé da página,
     onde colocamos informações de contato, direitos autorais, etc. -->
@@ -86,6 +144,63 @@
 <p>
 Tem interesse em fechar um projeto comigo? Entre em contato.
 </p>
+
+<form action=""> <!-- Formulário de contato 
+    o  elemento <form> é usado para criar um formulário de contato, 
+    onde o atributo action define o destino do formulário, ou seja, 
+    para onde os dados do formulário serão enviados quando o usuário clicar no botão de envio. -->
+
+        <label for="nome">Nome:</label>
+        <!-- O elemento <label> é usado para definir um rótulo para um elemento de formulário,
+        onde o atributo for define a associação entre o rótulo e o elemento de formulário correspondente. -->
+        <input type="text" id="nome" name="nome" required> 
+        <!-- O elemento <input> é usado para criar um campo de entrada de texto / caixa de seleção,
+        onde o atributo type define o tipo de entrada, 
+        o atributo id define o identificador único do campo,
+        o atributo name define o nome do campo para identificação no envio do formulário e
+        o atributo required define que o campo é obrigatório. -->
+        <br>
+        <label for="telefone">Telefone: </label>
+        <input type="tel" id="telefone" name="telefone" required>
+        <br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" required>  
+        
+<br>
+
+<label for="assunto">Assunto: </label>
+<select name="assunto" id="assunto"> <!-- O elemento <select> é usado para criar um menu suspenso, 
+    onde o usuário pode selecionar uma opção entre várias disponíveis,
+    o atributo name define o nome do campo para identificação no envio do formulário,
+    o atributo id define o identificador único do campo -->
+    <option value="orcamento">Orçamento</option> <!-- Opção para selecionar  
+    O Elemento <option> é usado para criar uma opção no menu suspenso,
+    onde o atributo value define o valor da opção -->
+    <option value="duvida">Dúvida</option>
+    <option value="parceria">Parceria</option>
+</select>
+
+        <label for="mensagem">Mensagem: </label>
+        <textarea name="mensagem" id="mensagem" cols="20" rows="5"></textarea> <!-- Caixa de mensagem 
+        O elemento <textarea> é usado para criar uma caixa de texto multilinha, 
+        onde o atributo name define o nome do campo para identificação no envio do formulário,
+        o atributo id define o identificador único do campo, 
+        o atributo cols define o número de colunas da caixa de texto 
+        e o atributo rows define o número de linhas da caixa de texto. -->
+        <br>
+        <input type="checkbox" id="inscricao" name="  inscricao">
+        <label for="inscricao">Deseja receber novidades? Fique por dentro!</label>
+        <br>
+        <input type="date"> <!-- O elemento <input> com o atributo type="date" é usado para criar um campo de entrada de data -->
+        <br>
+        <button type="submit">Enviar</button> <!-- Botão de envio 
+        O elemento <button> é usado para criar um botão de envio, 
+        onde o atributo type define o tipo de botão, 
+        sendo "submit" o tipo padrão para enviar o formulário. -->
+
+</form> <!-- Fim do formulário de contato -->
+
+
 
    <address>
 <!-- O elemento <address> é usado para definir informações de contato, como endereço, telefone, email, etc. -->
