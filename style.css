@@ -1,0 +1,140 @@
+/* Como funciona a estrutura do CSS?
+
+O CSS possui::
+Seletores: são os elementos HTML que queremos estilizar.
+Propriedades: são as características que queremos modificar, como cor, tamanho, fonte, etc.
+Valores: são os valores que atribuímos às propriedades para definir o estilo desejado.
+Chaves: são usadas para agrupar as declarações de estilo dentro de um bloco de declaração. 
+Declaração: é a combinação de uma propriedade e um valor, que define o estilo a ser aplicado ao elemento selecionado.
+Blocos de declaração: são conjuntos de declarações agrupadas dentro de chaves, que definem o estilo para um seletor específico.
+
+Exemplo de estrutura CSS:   
+
+seletor {  propriedade: valor; }
+    seletor = p
+    propriedade = color
+    valor = red
+*/
+
+/* SELETORES CSS
+
+Para aplicar estilos a um elemento HTML específico, use o seletor correspondente.
+
+Quais são os selteores CSS mais comuns?
+
+1. Seletor por TAG: seleciona elementos HTML com base em sua tag. 
+Exemplo: p { color: red; } - estiliza todos os parágrafos (p) com a cor vermelha.
+OBS: O seletor por tag é o mais básico e simples, mas pode afetar muitos elementos se não for usado com cuidado, 
+pois ele estiliza todos os elementos do mesmo tipo.
+
+2. Seletor por ID: seleciona um elemento HTML específico com base em seu atributo id.
+Exemplo: #meu-id { color: blue; } - estiliza o elemento com o id "meu-id" com a cor azul.
+OBS: O seletor por ID é mais específico do que o seletor por tag, pois ele estiliza apenas um elemento com um id único. 
+É importante lembrar que um id deve ser único em um documento HTML, ou seja, não pode haver dois elementos com o mesmo id.
+
+3. Seletores por classe: seleciona elementos HTML com base em seu atributo class.
+Exemplo: .minha-classe { color: green; } - estiliza todos os elementos com a classe "minha-classe" com a cor verde.
+OBS: Uma classe pode ser atribuída a vários elementos, permitindo que eles compartilhem o mesmo estilo.  
+
+4. Seletor universal: seleciona todos os elementos HTML.
+Exemplo: * { color: purple; } - estiliza todos os elementos com a cor roxa.
+OBS: O seletor universal é o mais abrangente, pois ele estiliza todos os elementos do documento. 
+No entanto, é importante usá-lo com cuidado, pois pode afetar o desempenho do site se aplicado a um grande número de elementos.
+Ele é representado pelo asterisco (*), e é útil para aplicar estilos globais a todos os elementos, 
+como definir uma fonte padrão ou remover margens e preenchimentos.
+Ele vai atribuir uma regra para os elementos que não tiverem uma regra definida.
+*/
+
+/* Seletor universal */
+* {  
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* a propriedade font-family define a fonte dos elementos */   
+    /* Para definir a fonte, use:
+    - Nomes de fontes: como "Arial", "Times New Roman", "Verdana", etc.
+    - Fontes genéricas: como "serif", "sans-serif", "monospace", etc.
+    - Fontes personalizadas: usando a regra @font-face para importar fontes externas.*/
+    color: blueviolet; /* a propriedade color define a cor dos elementos */
+    /* Para deffinir cores, use:
+    - Nomes de cores: como "red", "blue", "green", etc.
+    - Códigos hexadecimais: como "#FF0000" para vermelho, "#0000FF" para azul, etc.
+    - Códigos RGB: como "rgb(255, 0, 0)" para vermelho, "rgb(0, 0, 255)" para azul, etc. */ 
+    
+
+}
+
+/* Seletor por tag */
+p { 
+    color: black;
+}
+a { 
+    color: red;
+}
+td { 
+    color: black;
+}
+
+/* Seletor por ID */
+#sobre {
+/* # é usado para selecionar um elemento com um id específico. */
+    font-weight: bold; /* a propriedade font-weight define a espessura da fonte dos elementos */
+}
+
+/* Seletor por classe
+.habilidades { 
+. é o símbolo usado para indicar que estamos selecionando uma classe.
+    font-style: italic; a propriedade font-style define o estilo da fonte dos elementos
+}  */
+
+
+/* Seletore avançados:
+
+1. Irmão adjacente: seleciona um elemento que é imediatamente seguido por outro elemento.
+Exemplo: h2 + p { color: orange; } - estiliza o parágrafo que vem imediatamente após um título h2 com a cor laranja.   
+É representado pelo símbolo de mais (+) e é útil para estilizar elementos que estão próximos uns dos outros, como um parágrafo que segue um título.
+
+2. Geral de irmãos: seleciona todos os elementos que são irmãos de um elemento específico, independentemente de sua posição.
+Exemplo: h2 ~ p { color: teal; } - estiliza todos os parágrafos que são irmãos de um título h2 com a cor verde-azulada.
+É representado pelo símbolo de til (~) e é útil para estilizar elementos que compartil ham o mesmo pai, 
+como todos os parágrafos que seguem um título dentro de uma seção.
+
+3. Filhos: seleciona elementos que são filhos diretos de um elemento específico.
+Exemplo: div > p { color: maroon; } - estiliza todos os parágrafos que são filhos diretos de uma div com a cor marrom.
+É representado pelo símbolo de maior (>) e é útil para estilizar elementos que estão diretamente dentro de outro elemento, 
+como um parágrafo que é filho direto de uma div.
+
+4. Descendentes: seleciona elementos que são descendentes de um elemento específico, independentemente de sua posição na hierarquia.
+Exemplo: div p { color: navy; } - estiliza todos os parágrafos que são descendentes de uma div com a cor azul-marinho.
+É representado por um espaço em branco e é útil para estilizar elementos que estão dentro de outro elemento, independentemente de sua posição na hierarquia,
+como todos os parágrafos que estão dentro de uma div,
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+table { /* Seletor por tag */
+    border: 1px solid black; /* a propriedade border define a borda dos elementos */
+    /* Para definir bordas, use:
+    - border-width: define a largura da borda (ex: "1px", "2px", etc.)
+    - border-style: define o estilo da borda (ex: "solid", "dashed", "dotted", etc.)
+    - border-color: define a cor da borda (ex: "black", "#000000", "rgb(0, 0, 0)", etc.) */
+}
+
+
+

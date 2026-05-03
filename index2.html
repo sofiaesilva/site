@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/> <!-- link para o arquivo CSS externo 
+    O elemento <link> é usado para vincular um arquivo CSS externo à página HTML. 
+    O atributo rel="stylesheet" indica que o arquivo vinculado é uma folha de estilo, 
+    e o atributo href="style.css" especifica o caminho para o arquivo CSS.
+
+    Por que usar um arquivo CSS externo?
+    1. Organização: Manter o CSS em um arquivo separado ajuda a manter o código HTML mais limpo e organizado.
+    2. Reutilização: Um arquivo CSS externo pode ser reutilizado em várias páginas do site, 
+    permitindo que você mantenha um estilo consistente em todo o site.
+    3. Manutenção: Se você precisar fazer alterações no estilo do site, 
+    pode simplesmente editar o arquivo CSS externo, e as mudanças serão refletidas em todas as páginas que o utilizam. 
+    Além disso, ter o CSS em um arquivo separado facilita a manutenção do código, 
+    pois permite que os desenvolvedores façam alterações no estilo sem precisar mexer no código HTML, 
+    o que pode reduzir o risco de introduzir erros no layout da página.
+    4. Desacoplamento: Separar o conteúdo (HTML) da apresentação (CSS) é uma boa prática de desenvolvimento web, 
+    pois permite que os desenvolvedores trabalhem de forma mais eficiente e facilita a colaboração entre designers e desenvolvedores.
+    5. Desempenho: Navegadores podem armazenar em cache arquivos CSS externos, o que pode melhorar o desempenho do site, 
+    especialmente se o mesmo arquivo CSS for usado em várias páginas.
+    -->
+</head>
+
+<body>
+    <header> 
+        <h1>Sofia Silva</h1> 
+
+        <nav> 
+            <ul> 
+                <li><a href="#sobre">Sobre mim</a></li> 
+                <li><a href="#projetos">Projetos</a></li> 
+                <li><a href="#habilidades">Habilidades</a></li> 
+                <li><a href="#contato">Contato</a></li> 
+                <li><a href="https://www.linkedin.com/in/sofia-silva-525022359/" target="_blank">Linkedin</a></li>
+            </ul>
+        </nav> 
+    </header> 
+
+    <section id="sobre"> 
+        <h2>Sobre mim</h2>      
+            <img src=""
+            alt="Foto de perfil de Sofia Silva"
+            title="Foto de perfil de Sofia Silva"> 
+
+        <article> 
+            <p> >
+                Olá! Meu nome é Sofia Silva e sou uma desenvolvedora web apaixonada por criar experiências digitais incríveis. 
+                <br>
+                Tenho experiência em HTML, CSS, JavaScript e estou sempre buscando aprender novas tecnologias para aprimorar minhas habilidades.
+                <br>
+                Adicionar texto adicional aqui para preencher o parágrafo e mostrar como o texto é exibido na página.
+            </p> 
+        </article>
+       
+        <h3>Minha jornada profissional</h3> 
+            <p>
+                Minha jornada profissional começou há alguns anos, quando comecei a estudar programação. 
+                <br>
+                Desde então, tenho trabalhado em diversos projetos, sempre buscando aprimorar minhas habilidades e aprender novas tecnologias.
+            </p>
+               
+    </section> 
+    <section id="projetos">
+        <h2>Projetos</h2> 
+        <article>
+            <h3>Projeto 1: Site de Portfólio</h3>
+            <p>
+                Este é o meu primeiro site, desenvolvido para fins de aprendizado.
+            </p>
+        </article>        
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades e tecnologias</h2>
+        <table> 
+            <thead> 
+                <tr> 
+                    <th>Tecnologia</th> 
+                    <th>Nível de Proficiência</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+
+            <tbody> 
+                <tr>
+                    <td>HTML</td> 
+                    <td>Iniciante</td>
+                    <td>Conhecimento básico em HTML5, incluindo semântica e melhores práticas.</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td> 
+                    <td>Iniciante</td>
+                    <td>Conhecimento básico em JavaScript, incluindo sintaxe, funções e manipulação do DOM.</td>
+                </tr>
+                <tr>
+                    <td>Python</td> 
+                    <td>Iniciante</td>
+                    <td>Conhecimento básico em Python, incluindo sintaxe e programação orientada a objetos.</td>
+                </tr>
+                <tr>
+                    <td>SQL</td> 
+                    <td>Iniciante</td>
+                    <td>Conhecimento básico em SQL, incluindo consultas e manipulação de dados.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <footer>
+
+        <section id="contato"> 
+            <h2>Contatos</h2>
+        <p>
+        Tem interesse em fechar um projeto comigo? Entre em contato.
+        </p>
+        <form action=""> 
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required> 
+                <br>
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone" required>
+                <br>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>  
+                <br>
+                <label for="assunto">Assunto: </label>
+                <select name="assunto" id="assunto"> 
+                    <option value="orcamento">Orçamento</option> 
+                    <option value="duvida">Dúvida</option>
+                    <option value="parceria">Parceria</option>
+                </select>
+                <label for="mensagem">Mensagem: </label>
+                <textarea name="mensagem" id="mensagem" cols="20" rows="5"></textarea> 
+                <br>
+                <input type="checkbox" id="inscricao" name="  inscricao">
+                <label for="inscricao">Deseja receber novidades? Fique por dentro!</label>
+                <br>
+                <input type="date">
+                <br>
+                <button type="submit">Enviar</button>
+        </form>
+
+        <address>
+            <p>
+                Endereço: Rua das Flores, 123, São Paulo, SP
+            </p>
+
+            <p>
+                Email: <a href="mailto:sofia.silva@example.com">sofia.silva@example.com</a>
+            </p>
+
+            <p>
+                Telefone: <a href="tel:(11) 1234-5678">(11) 1234-5678</a>
+            </p>
+        </address>
+
+        <p>
+            &copy; 2023 Sofia Silva. Todos os direitos reservados. 
+        </p> 
+        </section>
+
+    </footer>
+
+</body> 
+</html>
